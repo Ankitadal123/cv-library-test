@@ -4,10 +4,12 @@ import './Header.scss';
 import TabSwitcher from '../components/TabSwitcher';
 import LocationList from './LocationList';
 import IndustryList from './IndustryList';
+import LocationAutocomplete from './LocationAutocomplete';
 
 
 export default function Header() {
   const [activeTab, setActiveTab] = useState('Jobs by Location');
+  const [selectedLocation, setSelectedLocation] = useState('');
   return (
     <section className="search-header">
       <img src="/assets/Logo white.svg" alt="CV Library" className="logo" />
@@ -29,13 +31,7 @@ export default function Header() {
   <div className="location-distance">
     <div className="form-group">
       <label htmlFor="location">Location</label>
-      <input
-        type="text"
-        id="location"
-        name="location"
-        placeholder="e.g. town or postcode"
-        className="input location"
-      />
+      <LocationAutocomplete onSelect={(val) => setSelectedLocation(val)} />
     </div>
     <div className="form-group">
       <label htmlFor="distance">Distance</label>
