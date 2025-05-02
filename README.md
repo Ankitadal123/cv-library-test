@@ -23,7 +23,35 @@ A responsive job search page built using **Next.js** with tabbed navigation for 
 - [CV-Library Location API](https://api.cv-library.co.uk/v1/locations?q=su)
 
 ---
+##  Internationalization
 
+Language files are stored in `public/locales/{lang}/common.json`.
+
+Switch languages by navigating to `/en` or `/de` or using the `i18n.changeLanguage()` method.
+
+---
+
+##  Project Structure
+
+```
+components/
+  ├── Header.js
+  ├── LocationList.js
+  ├── IndustryList.js
+  ├── LocationAutocomplete.js
+  └── TabSwitcher.js
+
+pages/
+  ├── index.js
+  └── jobs.js
+
+public/assets/
+  ├── Logo white.svg
+  └── search.svg
+
+public/locales/
+  ├── en/common.json
+  └── de/common.json
 ## Getting Started
 
 ### 1. Clone the repo

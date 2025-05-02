@@ -6,6 +6,7 @@ import './LocationAutocomplete.scss';
 const LocationAutocomplete = ({ onSelect }) => {
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  const [justSelected, setJustSelected] = useState(false);
 
   const fetchSuggestions = async (searchTerm) => {
     if (searchTerm.length < 2) {
@@ -22,18 +23,22 @@ const LocationAutocomplete = ({ onSelect }) => {
   };
 
   const debouncedFetch = debounce(fetchSuggestions, 300);
-
-  useEffect(() => {
-    debouncedFetch(query);
-    return () => debouncedFetch.cancel();
-  }, [query]);
-
   const handleSelect = (location) => {
     const label = location.displayLocation || location.label || '';
+    setJustSelected(true); 
     onSelect(label);
     setQuery(label);
     setSuggestions([]);
   };
+
+  useEffect(() => {
+    if (justSelected) {
+      setJustSelected(false);
+      return;
+    }
+    debouncedFetch(query);
+    return () => debouncedFetch.cancel();
+  }, [query]);
 
   return (
     <div className="location-autocomplete">

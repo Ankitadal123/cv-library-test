@@ -1,28 +1,25 @@
+.location-wrapper,
 .industry-wrapper {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    color: #ffffff;
-    opacity: 1;
-    width: 218px;
-    max-width: 100%;
-    height: auto;
-    text-align: left;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: left;
+ // background-color: #003366; // match dark blue section under tabs
+}
+
+.location-grid,
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    white-space: nowrap;
   }
-  
-  .industry-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); // 2 columns
-    gap: 0.5rem 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  
-    li {
-      white-space: nowrap;
-    }
-  }
-  
+}

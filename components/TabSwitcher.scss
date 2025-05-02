@@ -1,28 +1,23 @@
 .tab-switcher {
-    display: flex;
-    justify-content: center;
-    gap: 0;
-    margin-top: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 6px;
-    overflow: hidden;
-  
-    button {
-      padding: 1rem 2rem;
-      border: none;
-      background: transparent;
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-  
-      &.active {
-        background-color: #6699cc;
-      }
-  
-      &:hover:not(.active) {
-        background-color: rgba(255, 255, 255, 0.1);
-      }
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  button {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+
+    &.active {
+      background-color: #6699cc;
+      border-bottom: 4px solid #ffffff;
     }
   }
+}
+
   
