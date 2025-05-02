@@ -5,9 +5,11 @@ import TabSwitcher from '../components/TabSwitcher';
 import LocationList from './LocationList';
 import IndustryList from './IndustryList';
 import LocationAutocomplete from './LocationAutocomplete';
+import { useTranslation } from 'next-i18next';
 
 
 export default function Header() {
+  const { t } = useTranslation('common');
   const [activeTab, setActiveTab] = useState('Jobs by Location');
   const [selectedLocation, setSelectedLocation] = useState('');
   return (
@@ -16,7 +18,7 @@ export default function Header() {
 
       <form className="search-form">
            <div className="form-group">
-           <label htmlFor="keyword">Keywords / Job Title / Job Ref</label>
+           <label htmlFor="keyword">{t('keywordLabel')}</label>
            <input
             type="text"
             id="keyword"
@@ -30,11 +32,11 @@ export default function Header() {
   {/* Location and Distance */}
   <div className="location-distance">
     <div className="form-group">
-      <label htmlFor="location">Location</label>
+      <label htmlFor="location">{t('locationLabel')}</label>
       <LocationAutocomplete onSelect={(val) => setSelectedLocation(val)} />
     </div>
     <div className="form-group">
-      <label htmlFor="distance">Distance</label>
+      <label htmlFor="distance">{t('distanceLabel')}</label>
       <select id="distance" name="distance" className="input distance">
         <option>15 miles</option>
         <option>25 miles</option>
@@ -45,7 +47,7 @@ export default function Header() {
 
 
         <button className="search-button">
-              Find jobs now
+        {t('searchJobs')}
                 <img src="/assets/search.svg" alt="search" className="search-icon" />
         </button>
     </form>

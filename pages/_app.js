@@ -1,8 +1,9 @@
 // import '../styles/globals.scss';
-import '../i18n';
+//import '../i18n';
+import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);
