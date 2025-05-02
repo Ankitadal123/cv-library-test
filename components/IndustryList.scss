@@ -1,0 +1,28 @@
+.industry-wrapper {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 1;
+    width: 218px;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .industry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // 2 columns
+    gap: 0.5rem 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      white-space: nowrap;
+    }
+  }
+  
