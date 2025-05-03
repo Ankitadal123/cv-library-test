@@ -25,7 +25,6 @@ A modern, responsive job search interface built with **Next.js**, featuring **lo
 - [React](https://reactjs.org/)
 - [SCSS](https://sass-lang.com/)
 - [next-i18next](https://github.com/i18next/next-i18next)
-- [CV-Library Location API](https://api.cv-library.co.uk/v1/locations)
 - [Lodash Debounce](https://www.npmjs.com/package/lodash.debounce) to limit API calls during autocomplete search input. This ensures performance and reduces request volume
 
 ##  Getting Started
