@@ -43,14 +43,14 @@ export default function Header() {
         <option>50 miles</option>
       </select>
     </div>
+    
+    
   </div>
-
-
-        <button className="search-button">
+  <button className="search-button">
         {t('searchJobs')}
                 <img src="/assets/search.svg" alt="search" className="search-icon" />
         </button>
-    </form>
+</form>
     <TabSwitcher onTabChange={setActiveTab} />
 
     <div className="tab-content">

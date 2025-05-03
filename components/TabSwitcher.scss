@@ -1,8 +1,7 @@
 .tab-switcher {
   display: flex;
-  justify-content: center;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between; // or center, or start
+  width: 600px;
 
   button {
     padding: 1rem 2rem;
@@ -12,6 +11,7 @@
     color: #ffffff;
     cursor: pointer;
     border-bottom: 4px solid transparent;
+    width:50%;
 
     &.active {
       background-color: #6699cc;
