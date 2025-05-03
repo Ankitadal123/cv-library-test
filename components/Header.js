@@ -51,13 +51,14 @@ export default function Header() {
                 <img src="/assets/search.svg" alt="search" className="search-icon" />
         </button>
 </form>
+<div className="tab-section">
     <TabSwitcher onTabChange={setActiveTab} />
 
     <div className="tab-content">
         {activeTab === 'Jobs by Location' && <LocationList />}
         {activeTab === 'Jobs by Industry' && <IndustryList />}
     </div>
-
+</div>
   </section>
   );
 }

@@ -2,7 +2,17 @@
   display: flex;
   justify-content: space-between; // or center, or start
   width: 600px;
-
+  .tab-section {
+    width: 100%;
+    max-width: 700px; // match search-form
+    margin: 0 auto;
+  
+    .tab-content {
+      margin-top: 1rem;
+      padding-left: 0; // Ensure no unintended padding
+    }
+  }
+  
   button {
     padding: 1rem 2rem;
     background: transparent;
