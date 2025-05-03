@@ -65,24 +65,35 @@ Then open [http://localhost:3000](http://localhost:3000).
 ##  Project Structure
 
 ```
-components/
-  ├── Header.js
-  ├── LocationAutocomplete.js
-  ├── LocationList.js
-  ├── IndustryList.js
-  └── TabSwitcher.js
+.
+├── components/                  # Reusable UI components
+│   ├── ErrorBoundary.js
+│   ├── Header.js
+│   ├── IndustryList.js
+│   ├── LocationAutocomplete.js
+│   ├── LocationList.js
+│   └── TabSwitcher.js
+├── pages/                       # Next.js routing (page views)
+│   ├── _app.js
+│   └── index.js
+├── public/                      # Static files (images, favicon, etc.)
+├── styles/                      # Modular SCSS styling by component
+│   ├── Header.scss
+│   ├── IndustryList.scss
+│   ├── LocationAutocomplete.scss
+│   ├── LocationList.scss
+│   └── TabSwitcher.scss
+├── utils/                       # Utility helpers
+│   └── errorHandler.js
+├── .gitignore                   # Files/folders to ignore in Git
+├── eslint.config.mjs           # ESLint config for consistent linting
+├── jsconfig.json               # Absolute path aliases for import convenience
+├── next-i18next.config.js      # i18n configuration for translations
+├── next.config.js              # Next.js configuration
+├── package-lock.json           # Auto-generated lock file
+├── package.json                # Project metadata and dependencies
+└── README.md                   # Project overview and setup instructions
 
-pages/
-  ├── index.js
-  └── jobs.js
-
-public/
-  ├── assets/
-  │   ├── Logo white.svg
-  │   └── search.svg
-  └── locales/
-      ├── en/common.json
-      └── de/common.json
 
 next-i18next.config.js
 next.config.js
