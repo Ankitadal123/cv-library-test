@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TabSwitcher.scss';
+import '../styles/TabSwitcher.scss';
 
 const TabSwitcher = ({ tabs = ['Jobs by Location', 'Jobs by Industry'], onTabChange }) => {
   const [activeTab, setActiveTab] = useState(tabs[0]);

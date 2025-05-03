@@ -1,6 +1,6 @@
 // components/IndustryList.js
 import React from 'react';
-import './IndustryList.scss';
+import '../styles/IndustryList.scss';
 
 const industries = [
   'Accounting',

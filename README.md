@@ -11,6 +11,13 @@ A modern, responsive job search interface built with **Next.js**, featuring **lo
 -  Tabbed navigation: Jobs by **Location** and **Industry**
 -  Language support (English and German) via `next-i18next`
 -  Fully responsive layout, clean SCSS-based styling
+- Modularized components into /components directory
+- Centralized all SCSS files under /styles with clear naming
+- Applied responsive layout and pixel-perfect styling per XD design
+- Enhanced LocationAutocomplete with lodash.debounce and API integration
+- Structured job tabs using accessible and scalable grid
+- Added i18n support with next-i18next and locale JSON
+- Updated README.md with full setup guide and folder breakdown
 
 ---
 

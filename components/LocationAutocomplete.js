@@ -1,7 +1,7 @@
 // components/LocationAutocomplete.js
 import React, { useState, useEffect } from 'react';
 import debounce from 'lodash.debounce';
-import './LocationAutocomplete.scss';
+import '../styles/LocationAutocomplete.scss';
 //import { handleApiError } from '../utils/errorHandler'; if need to test the error handling
 
 const LocationAutocomplete = ({ onSelect }) => {

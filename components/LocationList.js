@@ -1,6 +1,6 @@
 // components/LocationList.js
 import React from 'react';
-import './LocationList.scss';
+import '../styles/LocationList.scss';
 
 const staticLocations = [
   'Aberdeen',

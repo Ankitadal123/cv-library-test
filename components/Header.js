@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import React from 'react';
-import './Header.scss';
+import '../styles/Header.scss';
 import TabSwitcher from '../components/TabSwitcher';
 import LocationList from './LocationList';
 import IndustryList from './IndustryList';
